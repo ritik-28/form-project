@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+    <title>Document</title>
+
+
+
+    <style>
+
+      body {
+
+        /* background-image: url("img/contact-banner-img.png"); */
+
+
+
+        background-image: url("https://buraaq.in/iiflbuspartner/wp-content/uploads/2021/08/contact-banner-img.png");
+
+
+
+        background-repeat: no-repeat;
+
+
+
+        background-size: cover;
+
+      }
+
+
+
+      label {
+
+        display: inline;
+
+
+
+        font-size: 13px;
+
+
+
+        text-align: left;
+
+      }
+
+
+
+      #head1 {
+
+        color: orangered;
+
+
+
+        text-align: center;
+
+      }
+
+
+
+      #head2 {
+
+        text-align: center;
+
+      }
+
+
+
+      #divide {
+
+        border-style: solid;
+
+
+
+        border-width: 2px;
+
+
+
+        border-color: orangered;
+
+
+
+        border-radius: 5px;
+
+
+
+        width: 500px;
+
+
+
+        margin-left: auto;
+
+
+
+        margin-right: auto;
+
+
+
+        background-color: rgb(240, 229, 229);
+
+
+
+        padding-right: 13px;
+
+      }
+
+
+
+      #call {
+
+        margin-top: 10px;
+
+
+
+        margin-bottom: 2px;
+
+
+
+        margin-left: 2px;
+
+
+
+        margin-right: 2px;
+
+
+
+        width: 100%;
+
+
+
+        border: none;
+
+      }
+
+
+
+      #name,
+
+      #Email,
+
+      #phone {
+
+        width: 100%;
+
+
+
+        margin-right: 5px;
+
+
+
+        margin-left: 3px;
+
+      }
+
+
+
+      .div2 {
+
+        width: 100%;
+
+      }
+
+
+
+      .call1 {
+
+        display: none;
+
+
+
+        width: 50%;
+
+      }
+
+    </style>
+
+  </head>
+
+
+
+  <body>
+
+    <div id="divide">
+
+      <h3 id="head1">Book a call</h3>
+
+
+
+      <h6 id="head2">
+
+        Book a call slot and our representive will call you within 1hr of
+
+        selected time
+
+      </h6>
+
+
+
+      <hr />
+
+
+
+      <form action="#" class="form1" onsubmit = "defaultprevent(event)">
+
+        <label for="name" class="align">Name:</label><br />
+
+
+
+        <input type="text" id="name" name="name" value="hello" /><br />
+
+
+
+        <label for="Email" class="align">Email:</label><br />
+
+
+
+        <input type="email" id="Email" name="email" /><br />
+
+
+
+        <label for="phone" class="align">Phone:</label><br />
+
+
+
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" /><br />
+
+
+
+        <label for="call">Time for Call:</label><br />
+
+
+
+        <div class="div2">
+
+          <input type="date" id="call1" />
+
+
+
+          <input type="time" id="call2" /><br />
+
+        </div>
+
+
+
+        <button
+
+          style="
+
+            background-color: orangered;
+
+
+
+            color: whitesmoke;
+
+
+
+            border-radius: 4px;
+
+
+
+            width: 100%;
+
+
+
+            margin: 3px 2px;
+
+          "
+
+          onclick = "clickfunction()"
+
+          onmouseover = "mover()"
+
+          onmouseout = "mout()"
+
+        >
+
+          GET A CALL
+
+        </button>
+
+      </form>
+
+    </div>
+
+
+
+    <script>
+
+      const clickfunction = function () {
+
+        console.log(document.querySelector("#name").value);
+
+      };
+
+      const mover = function () {
+
+        console.log("hello mouse over happend");
+
+      };
+
+      const mout = function () {
+
+        console.log("hello mouse out");
+
+      };
+
+      const defaultprevent = function (e) {
+
+        e.preventDefault();
+
+      };
+
+    </script>
+
+  </body>
+
+</html>
